@@ -1,0 +1,9 @@
+[submodule "website"]
+	path = website
+	url = https://github.com/danielunited/getplan-website.git
+[submodule "app"]
+	path = app
+	url = https://github.com/danielunited/business-plan.git
+[submodule "blog"]
+	path = blog
+	url = https://github.com/danielunited/getplan-blog.git
