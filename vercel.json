@@ -4,6 +4,7 @@
     { "source": "/create/:match*", "destination": "https://business-plan-iota.vercel.app/:match*" },
     { "source": "/blog", "destination": "https://getplan-blog.vercel.app/" },
     { "source": "/blog/:match*", "destination": "https://getplan-blog.vercel.app/:match*" },
+    { "source": "/", "destination": "https://getplan-website.vercel.app/" },
     { "source": "/:match*", "destination": "https://getplan-website.vercel.app/:match*" }
   ]
 }
