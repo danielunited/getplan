@@ -1,7 +1,7 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/website" },
-    { "source": "/create", "destination": "/app" },
-    { "source": "/blog", "destination": "/blog" }
+    { "source": "/", "destination": "https://getplan-website.vercel.app/" },
+    { "source": "/create", "destination": "https://business-plan-iota.vercel.app/" },
+    { "source": "/blog", "destination": "https://getplan-blog.vercel.app/" }
   ]
 }
