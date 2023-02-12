@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/website" },
+    { "source": "/create", "destination": "/app" },
+    { "source": "/blog", "destination": "/blog" }
+  ]
+}
