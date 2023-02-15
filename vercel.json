@@ -3,6 +3,7 @@
     { "source": "/create", "destination": "https://business-plan-iota.vercel.app/create" },
     { "source": "/create/:match*", "destination": "https://business-plan-iota.vercel.app/create/:match*" },
     { "source": "/blog", "destination": "https://getplan-blog.vercel.app/blog/" },
+    { "source": "/blog/", "destination": "https://getplan-blog.vercel.app/blog/" },
     { "source": "/blog/:match*", "destination": "https://getplan-blog.vercel.app/blog/:match*" },
     { "source": "/", "destination": "https://getplan-website.vercel.app/" },
     { "source": "/:match*", "destination": "https://getplan-website.vercel.app/:match*" }
