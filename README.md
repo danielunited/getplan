@@ -38,3 +38,13 @@ Ghost/Gatsby in `gatsby-config.js`:
 ```js
 module.exports = { pathPrefix: `/blog` };
 ```
+
+## Pulling from Submodules
+
+For pulling the latest changes specifically for all the submodules, use:
+
+```bash
+git submodule update --recursive --remote
+```
+
+This will fetch and update the submodules to their latest commits in their respective remote repositories. Make sure you're in the root directory of your main repository when running this command.
