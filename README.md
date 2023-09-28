@@ -1,24 +1,16 @@
-# GetPlan: Zero-Cost, Serverless Multi-Framework Deployment
+# Deploying a multi-framework app using Vercel
 
 ## Overview
 
-GetPlan demonstrates how to deploy a multi-framework application under a single domain using Vercel. The repository includes:
+This demo demonstrates how to deploy a multi-framework app on a single domain using Vercel. It has:
 
-- Static HTML for the main domain: [https://getplan.vercel.app/](https://getplan.vercel.app/)
-- Nuxt 3 App at: [https://getplan.vercel.app/create](https://getplan.vercel.app/create)
-- Ghost/Gatsby Blog at: [https://getplan.vercel.app/blog/](https://getplan.vercel.app/blog/)
+- [Main Site](https://getplan.vercel.app/): Static HTML 
+- [/create](https://getplan.vercel.app/create): Nuxt3 
+- [/blog](https://getplan.vercel.app/blog/): Ghost & Gatsby  (deployed on [fly.io](https://fly.io/) micro-VMs)
+  - [Tutorial](https://blixtdev.com/how-to-host-a-ghost-blog-for-free-on-fly-io/)
+  - [Template](https://github.com/TryGhost/gatsby-starter-ghost)
 
-Custom domain deployment: [pitch.co.il](https://pitch.co.il/)
-
-## Technology Stack
-
-- **Main website**: Static HTML
-- **/create path**: Nuxt3
-- **/blog path**: Ghost & Gatsby (depployted through [fly.io](https://fly.io/))
-  - Learn how to set it up: [How to Host a Ghost Blog on Fly.io](https://blixtdev.com/how-to-host-a-ghost-blog-for-free-on-fly-io/)
-  - Template: [Gatsby-Starter-Ghost](https://github.com/TryGhost/gatsby-starter-ghost)
-  
-All components are deployed through Vercel.
+Also works on custom domain: [pitch.co.il](https://pitch.co.il/)
 
 ## Git Submodules
 
@@ -26,32 +18,23 @@ The repo utilizes Git submodules to manage these different parts of the project.
 
 ```git
 [submodule "website"]
-    path = website
     url = https://github.com/danielunited/getplan-website.git
 [submodule "app"]
-    path = app
     url = https://github.com/danielunited/business-plan.git
 [submodule "blog"]
-    path = blog
     url = https://github.com/danielunited/getplan-blog.git
 ```
 
+## Configs
 
-## Submodule-Specific Configurations
+Nuxt3 in `nuxt.config.ts`:
 
-In the Nuxt 3 app's `nuxt.config.ts`:
-
-```
-export default defineNuxtConfig({
-  ...
-  baseURL: '/create/',
-});
+```ts
+export default defineNuxtConfig({ baseURL: '/create/' });
 ```
 
-In the Ghost/Gatsby blog's `gatsby-config.js`:
+Ghost/Gatsby in `gatsby-config.js`:
 
+```js
+module.exports = { pathPrefix: `/blog` };
 ```
-module.exports = {
-  ...
-  pathPrefix: `/blog`,
-};
