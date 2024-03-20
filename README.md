@@ -4,13 +4,13 @@
 
 This demo demonstrates how to deploy a multi-framework app on a single domain using Vercel. It has:
 
-- [Main Site](https://getplan.vercel.app/): Static HTML 
-- [/create](https://getplan.vercel.app/create): Nuxt3 
-- [/blog](https://getplan.vercel.app/blog/): Ghost & Gatsby  (deployed on [fly.io](https://fly.io/) micro-VMs)
+- [Main Site](https://getplan.vercel.app/home-1.html): Static HTML website
+- [/create](https://getplan.vercel.app/create): Nuxt3 app
+- [/blog](https://getplan.vercel.app/blog/): Ghost/Gatsby-powered blog (deployed on [fly.io](https://fly.io/) micro-VMs)
   - [Tutorial](https://blixtdev.com/how-to-host-a-ghost-blog-for-free-on-fly-io/)
   - [Template](https://github.com/TryGhost/gatsby-starter-ghost)
 
-It also works on a [custom domain](https://pitch.co.il/)
+It also works on a [custom domain](https://pitch.co.il/home-1.html)
 
 ## Git Submodules
 
